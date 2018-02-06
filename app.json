@@ -1,0 +1,37 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/content/content",
+    "pages/test/test",
+    "pages/edit/edit"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "手札",
+        "iconPath": "images/icon/eye.png",
+        "selectedIconPath": "images/icon/eye_selected.png"
+      },
+      {
+        "pagePath": "pages/content/content",
+        "text": "新增",
+        "iconPath": "images/icon/add.png",
+        "selectedIconPath": "images/icon/add_selected.png"
+      },
+      {
+        "pagePath": "pages/test/test",
+        "text": "测试",
+        "iconPath": "images/icon/add.png",
+        "selectedIconPath": "images/icon/add_selected.png"
+      }
+    ]
+  }
+}

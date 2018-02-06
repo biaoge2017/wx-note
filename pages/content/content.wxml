@@ -1,0 +1,12 @@
+<!--pages/content/content.wxml-->
+
+  <form bindsubmit="formSubmit" bindreset="formReset">
+  <view class="section">
+    <input name="title" name="text" placeholder="标题"  class="input-title"/>
+    <textarea name="content" maxlength="-1"  class="input-content"></textarea>
+  </view>
+  <view class="btn-area">
+    <button formType="submit">保存</button>
+    <button formType="reset">重写</button>
+  </view>
+ </form>
