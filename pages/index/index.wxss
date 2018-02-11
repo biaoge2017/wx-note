@@ -28,6 +28,23 @@
   background-color: #CDBA96;
   
 }
+.up text{
+  display: -webkit-box;
+  text-align: center;
+  font-size: 26rpx;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 5;
+  overflow:hidden;
+  text-overflow: ellipsis
+}
+.down text{
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow:hidden;
+  text-align: center;
+  text-overflow: ellipsis
+}
 .down{
   width:180rpx;
   height:60rpx;

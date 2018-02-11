@@ -5,6 +5,7 @@
     "pages/content/content",
     "pages/test/test",
     "pages/edit/edit"
+    
   ],
   "window": {
     "backgroundTextStyle": "light",

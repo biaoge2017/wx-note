@@ -5,8 +5,8 @@
     <view class="addnote" bindtap="addnote"><image src='/images/icon/addnote.png'></image></view>
     <view class="neirong" bindtap='editnote' wx:for="{{wills}}">
 
-      <view class="up">{{item.content}}</view>
-      <view class="down">{{item.text}}</view>
+      <view class="up"><text>{{item.content}}</text></view>
+      <view class="down"><text>{{item.text}}</text></view>
 
     </view>
   </view>

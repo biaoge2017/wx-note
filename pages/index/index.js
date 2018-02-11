@@ -26,7 +26,7 @@ Page({
   editnote: function(){
     console.log('click me ok');
     wx.navigateTo({
-      url: '../edit/edit?id=2'
+      url: '../edit/edit?key=key'
     })
   },
   onshow:function(){
@@ -35,6 +35,7 @@ Page({
   onLoad: function () {
     var storgeMsg = wx.getStorageSync('key');
     var wills=storgeMsg.detail;
+    console.log(wills);
     this.setData({
       wills:wills
     })

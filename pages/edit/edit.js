@@ -1,6 +1,33 @@
 // pages/edit/edit.js
 Page({
+  formSubmit: function (e) {
+    // wx.request({
+    //   url:'',
+    //   data:{e},
+    //   header:{
+    //     'content-type': 'application/json'
+    //   },
+    //   success:function (res){
+    //     console.log(res)
+    //   }
+    // })
+    //e.detail.value.id = CACHE1;
+    wx.setStorage({
+      key: "key",
+      data: e
+    })
+    try {
+      var value = wx.getStorageSync('key')
+      if (value) {
+        console.log('这是缓存' + value.detail.value.text)
+      }
+    } catch (e) {
+      // Do something when catch error
+    }
 
+
+    console.log('form发生了submit事件，携带数据为：', e.detail.value)
+  },
   /**
    * 页面的初始数据
    */
@@ -11,10 +38,14 @@ Page({
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function (options) {
-  
+  onLoad: function () {
+    var storgeMsg = wx.getStorageSync('key');
+    var wills = storgeMsg.detail.value;
+    console.log(wills);
+    this.setData({
+      wills: wills
+    })
   },
-
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
